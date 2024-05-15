@@ -1,0 +1,52 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    gap: 2rem;
+  }
+
+  .project-desc {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .p-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .p-tools {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .p-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .p-features li {
+    margin-bottom: 20px;
+  }
+
+  .p-github{
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+  @media (max-width: 1250px) {
+    .project-container {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
