@@ -1,91 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>AadhyaJoshi_Portfolio</title>
-    </head>
-
-    <body>
-        <h1>Aadhya Joshi</h1>
-        <h3>Phone Number: (+91) 9978695525<br />
-            Email ID: aadhyajoshi1510@gmail.com <br />
-            LinkedIn Profile: <br>
-            Github Profile: 
-        </h3>
-
-        <h2>Objective</h2><hr />
-        <p>I am a 2nd year B. Tech CSE student at Malaviya National Institute of Technology, Jaipur.
-            I am seeking an internship opportunity in the field of Software Development.
-        </p>
-
-        <h2>Education:</h2><hr />
-        <ol>
-            <li>
-                <b>B. Tech (Computer Science & Engineering)</b><br>
-                Malaviya National Institute of Technology, Jaipur, Rajasthan<br>
-                Nov 2022 - May 2026<br>
-                CGPA: 9.61 (Sem 3)
-            </li>
-            <p></p>
-            <li>
-                <b>Class 12 (CBSE Board)</b><br>
-                Navrachana Higher Secondary School, Vadodara, Gujarat<br>
-                March 2022<br>
-                Grade: 97.2%
-            </li>
-            <p></p>
-            <li>
-                <b>Class 10 (CBSE Board)</b><br>
-                Navrachana Higher Secondary School, Vadodara, Gujarat<br>
-                March 2020<br>
-                Grade: 98.8%
-            </li>
-        </ol>
-
-        <h2>Projects</h2><hr />
-        <div class="project-container">
-            <div class="project-desc">
-              <div class="p-title">Banknote Authentication</div>
-              <div class="p-tools">Unsupervised learning algorithms (K-Means Clustering) in Python.</div>
-              <ul class="p-features">
-                <li>✅ 10GB Storage</li>
-                <li>✅ 1 User</li>
-                <li>🚫 Support</li>
-              </ul>
-              <button class="p-github">Go to GitHub</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_AadhyaJoshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Welcome to My World!</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aadhya Joshi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
             </div>
-            <div class="project-desc">
-                <div class="p-title">Banking System Simulation</div>
-                <div class="p-tools">OOPs in C++</div>
-                <ul class="p-features">
-                    <li>Developed a robust banking system featuring distinct account types (Savings, Checking) using inheritance.</li>
-                    <li>Implemented functionalities for deposits, withdrawals, and balance inquiries through polymorphic methods within each account class.</li>
-                    <li>Enabled user interactions to perform transactions and dynamically displayed updated account balances. </li>
-                </ul>
-                <button class="p-github">Go to GitHub</a>
-            </div>
-            <div class="project-desc">
-                <div class="p-title">Employee Information Management</div>
-                <div class="p-tools">OOPs in C++</div>
-                <ul class="p-features">
-                    <li>Exhibited the concept of composition by developing classes for Employee and Company.</li>
-                    <li>Implemented functionalities for adding, removing employees, and displaying employee details in various scenarios.</li>
-                </ul>
-                <button class="p-github">Go to GitHub</a>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-
-        <h2>Technical Skills:</h2><hr />
-        <ul>
-            <li><b>Programming Languages:</b> C, C++, Python</li>
-            <li><b>Analytical Skills: </b> DSA, Data Analytics, Machine Learning</li>
-            <li><b>Configurational Tools:</b> GitHub and Git</li>
-            <li><b>Documentation:</b> Overleaf (LaTeX), MS Office applications</li>
-            <li><b>Design:</b> Canva</li>
-        </ul>
-
-        <p></p>
-    </body>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/portfolio-pic-animated.jpg" alt="Aadhya Joshi profile picture" style="border-radius: 50%;">
+        </div>
+        <div class="section__text">
+        <div class="section__text__p1">Hi! I am</div>
+        <h1 class="title">Aadhya Joshi</h1>
+        <p class="section__text__p2">Aspiring Software Engineer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/2022UCP1326.pdf')">
+                Download Resume
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+                Contact Information
+            </button>
+        </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedIn profile"
+                class="icon" onclick="window.open('https://www.linkedin.com/in/aadhya-joshi-66a7b4285/')">
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="window.open('https://github.com/AadhyaJoshi')">
+                <img src="./assets/leetcode.png" alt="My Github profile"
+                class="icon" onclick="window.open('https://leetcode.com/u/aadhyajoshi/')">
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>AI/DL Intern<br />@ ConfidoSoft Solutions Pvt Ltd, Vadodara, Gujarat</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Pursuing B.Tech in CSE at Malaviya National Institute of Technology, Jaipur, Rajasthan<br>
+                    Nov 2022 – May 2026
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am a 3rd year B. Tech CSE student at Malaviya National Institute of Technology, Jaipur. I am 
+seeking an internship opportunity in the field of Software Development. I am a highly motivated 
+engineer and I believe in perseverance, team work, and dedication. My research interests 
+include Deep Learning, Computer Vision and LLMs.
+              </p>
+            </div>
+          </div>
+          <div class="section__pic-container">
+            <img
+              src="./assets/portfolio-pic-2.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Prgramming Languages & Web Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C/C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Python</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML/CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>               
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Analytical Skills and Technological Tools</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Data Structures & Algorithms</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Object Oriented Programming</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Socket Programming</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Machine Learning</h3>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git & Github</h3>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>OverLeaf(LaTex)</h3>
+                    </div>
+                    </article>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/hcms.png"
+                  alt="Project 1"
+                  class="project-img"
+                  style="width: 50%;"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Hostel Complaint Management System</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/MauuJo/Hostel-Complaint-Management-System')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/bank.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">BankNote Authentication EDA Project</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/ocr.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">AI-powered Invoice Parser</h2>
+              <div class="btn-container">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:aadhyajoshi1510@gmail.com">aadhyajoshi1510@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/aadhya-joshi-66a7b4285/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    <script src="script.js"></script>
+</body>
 </html>
