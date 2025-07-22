@@ -3,11 +3,10 @@ function toggleMenu(){
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-
 }
 
 var typed = new Typed('.element',{
-    strings: ['B.Tech CSE Student','Software Engineer','Aspiring Data Scientist'],
+    strings: ['B.Tech CSE Student','Software Engineer'],
     typeSpeed: 50,
     backSpeed: 20,
     loop: true,
