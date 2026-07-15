@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("/assets/background_portfolio.png");
+  background-image: url("/html-portfolio/assets/background_portfolio.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

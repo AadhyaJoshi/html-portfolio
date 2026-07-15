@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import './App.css';
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
@@ -12,19 +14,19 @@ const socials = [
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/aadhya-joshi-66a7b4285/',
-    src: '/assets/linkedin.png',
+    src: asset('assets/linkedin.png'),
     alt: 'My LinkedIn profile',
   },
   {
     label: 'GitHub',
     href: 'https://github.com/AadhyaJoshi',
-    src: '/assets/github.png',
+    src: asset('assets/github.png'),
     alt: 'My GitHub profile',
   },
   {
     label: 'LeetCode',
     href: 'https://leetcode.com/u/aadhyajoshi/',
-    src: '/assets/leetcode.png',
+    src: asset('assets/leetcode.png'),
     alt: 'My LeetCode profile',
   },
 ];
@@ -32,25 +34,25 @@ const socials = [
 const experienceCards = [
   {
     title: 'Experience',
-    icon: '/assets/experience.png',
+    icon: asset('assets/experience.png'),
     description:
       'Technology Program Intern @ Wells Fargo International Solutions Pvt Ltd, Hyderabad, Telangana | Jan - June 2026',
   },
   {
     title: 'Experience',
-    icon: '/assets/experience.png',
+    icon: asset('assets/experience.png'),
     description:
       'Intern Analyst @ Wells Fargo International Solutions Pvt Ltd, Bengaluru, Karnataka | May - July 2025',
   },
   {
     title: 'Experience',
-    icon: '/assets/experience.png',
+    icon: asset('assets/experience.png'),
     description:
       'Software Developer Intern @ ConfidoSoft Solutions Pvt Ltd, Vadodara, Gujarat | May - June 2024',
   },
   {
     title: 'Education',
-    icon: '/assets/education.png',
+    icon: asset('assets/education.png'),
     description:
       'B.Tech CSE at Malaviya National Institute of Technology, Jaipur, Rajasthan | Nov 2022 – May 2026',
   },
@@ -93,27 +95,27 @@ const coursework = [
 const projects = [
     {
     title: 'Plagiarism Checker',
-    image: '/assets/plag_check.png',
+    image: asset('assets/plag_check.png'),
     href: 'https://github.com/SheliJaju/PlagiarismChecker',
   },
   {
     title: 'Hostel Complaint Management System',
-    image: '/assets/hcms.png',
+    image: asset('assets/hcms.png'),
     href: 'https://github.com/MauuJo/Hostel-Complaint-Management-System',
   },
   {
     title: 'BankNote Authentication EDA Project',
-    image: '/assets/bank.png',
+    image: asset('assets/bank.png'),
     href: 'https://github.com/AadhyaJoshi/banknote_auth_EDA',
   },
   {
     title: 'Game Development',
-    image: '/assets/game_dev.png',
+    image: asset('assets/game_dev.png'),
     href: 'https://github.com/AadhyaJoshi/Game_Dev',
   },
   {
     title: 'Chatbot using Chatterbot',
-    image: '/assets/chatbot.png',
+    image: asset('assets/chatbot.png'),
     href: 'https://github.com/AadhyaJoshi/Chatbot',
   },
 ];
@@ -198,7 +200,7 @@ function App() {
       <section id="profile">
         <div className="profile-intro">
           <div className="section__text__p1">Hi! I am</div>
-          <h1 className="title">Aadhya Joshi</h1>
+          <h2 className="title">Aadhya Joshi</h2>
           <p className="section__text__p2 intro-typed">
             🌟<span className="element">{typedText}</span>
           </p>
@@ -206,7 +208,7 @@ function App() {
         <div className="section__text__3">
           <div className="section__pic-container">
             <img
-              src="/assets/portfolio-pic-1.jpg"
+              src={asset('assets/portfolio-pic-1.jpg')}
               alt="Aadhya Joshi profile picture"
               className="profile-pic"
             />
@@ -224,7 +226,7 @@ function App() {
           <div className="btn-container">
             <a
               className="btn btn-color-2"
-              href="/assets/Aadhya_Joshi_Resume.pdf"
+              href={asset('assets/Aadhya_Joshi_Resume.pdf')}
               target="_blank"
               rel="noreferrer"
             >
@@ -274,7 +276,7 @@ function App() {
               <div className="article-container">
                 {skills.map((skill) => (
                   <article key={skill}>
-                    <img src="/assets/checkmark.png" alt="Checkmark icon" className="icon" />
+                    <img src={asset('assets/checkmark.png')} alt="Checkmark icon" className="icon" />
                     <div>
                       <h3>{skill}</h3>
                     </div>
@@ -287,7 +289,7 @@ function App() {
               <div className="article-container">
                 {coursework.map((course) => (
                   <article key={course.label}>
-                    <img src="/assets/checkmark.png" alt="Checkmark icon" className="icon" />
+                    <img src={asset('assets/checkmark.png')} alt="Checkmark icon" className="icon" />
                     <div>
                       <h3>
                         <a href={course.href} target="_blank" rel="noreferrer">
@@ -335,13 +337,13 @@ function App() {
         <h1 className="title">Contact Me</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
-            <img src="/assets/email.png" alt="Email icon" className="icon contact-icon email-icon" />
+            <img src={asset('assets/email.png')} alt="Email icon" className="icon contact-icon email-icon" />
             <p>
               <a href="mailto:aadhyajoshi1510@gmail.com">aadhyajoshi1510@gmail.com</a>
             </p>
           </div>
           <div className="contact-info-container">
-            <img src="/assets/linkedin.png" alt="LinkedIn icon" className="icon contact-icon" />
+                <img src={asset('assets/linkedin.png')} alt="LinkedIn icon" className="icon contact-icon" />
             <p>
               <a href="https://www.linkedin.com/in/aadhya-joshi-66a7b4285/" target="_blank" rel="noreferrer">
                 LinkedIn
